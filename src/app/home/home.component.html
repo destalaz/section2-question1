@@ -1,0 +1,28 @@
+<div class="grid-container">
+    <div class="grid">
+      <div class="grid-col--fixed-left">
+        <div class="grid-item grid-item--header">
+            <input type="number" id="input_number" 
+            name="input_number" (input)="checkNumber($event)"
+            value="number_show" >
+
+            <div>
+                <button type="button" (click)="click_btn()">Go</button>
+            </div>
+        </div>
+      </div>
+  
+      <div class="grid-col">
+        <div class="grid-item grid-item--header">
+          <p>HEAD</p>
+        </div>
+      </div>
+  
+      <div class="grid-col--fixed-right">
+        <div class="grid-item grid-item--header">
+          <p>HEAD</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
