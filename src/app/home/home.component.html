@@ -1,28 +1,27 @@
 <div class="grid-container">
     <div class="grid">
-      <div class="grid-col--fixed-left">
-        <div class="grid-item grid-item--header">
-            <input type="number" id="input_number" 
-            name="input_number" (input)="checkNumber($event)"
-            value="number_show" >
-
-            <div>
-                <button type="button" (click)="click_btn()">Go</button>
+        <div class="grid-col--fixed-left">
+            <div class="grid-item grid-item--header">
+                <input type="number" id="input_number" name="input_number" (input)="checkNumber($event)" >
+                <div>
+                    <button type="button" (click)="click_btn()">Check</button>
+                </div>
             </div>
         </div>
-      </div>
-  
-      <div class="grid-col">
-        <div class="grid-item grid-item--header">
-          <p>HEAD</p>
+
+        <div class="grid-col">
+            <div class="grid-item grid-item--header">
+                <select name="calculate" id="calculate">
+                    <option id="prime_number" *ngFor="let item of calculate_drop_down" value="isPrime">{{ item }}</option>
+                </select>
+            </div>
         </div>
-      </div>
-  
-      <div class="grid-col--fixed-right">
-        <div class="grid-item grid-item--header">
-          <p>HEAD</p>
+
+        <div class="grid-col--fixed-right">
+            <div class="grid-item grid-item--header">
+                <p>{{ isPrime }}</p>
+            </div>
         </div>
-      </div>
-  
+
     </div>
-  </div>
+</div>
